@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_prod">COVID-19</string>
+    <string name="app_name_staging">COVID-19</string>
+
+    <string name="coronavirusapplogo">coronaVirusAppLogo</string>
+    <string name="corona_live_tracking">App Developed By Ujjawal Kumar</string>
+    <string name="last_update"></string>
+    <string name="title_activity_preference">Preference</string>
+
+
+    <string name="pref_key_check">pref_key_check</string>
+
+    <string name="refresh_timeout">refreshing</string>
+    <string name="network_problem">Please Check Your network</string>
+    <string name="pref_key_datasource" translatable="false">pref_key_datasource</string>
+    <string name="pref_key_theme" translatable="false">pref_key_theme</string>
+    <string name="recover">Recover</string>
+    <string name="confirm">Infected</string>
+    <string name="recovered">All Recovered</string>
+    <string name="death">Death</string>
+    <string name="alldeath">All Death</string>
+    <string name="fetch">Wait…</string>
+    <string name="infected">All Infected</string>
+
+    <string name="country">All Country</string>
+    <string name="enable_push_notif">Enable Push Notification</string>
+
+
+    <string name="data_provided">Software Developed By </string>
+
+    <string name="select_data_source">Select data source</string>
+    <string name="change_language">Change Language</string>
+    <string name="change_theme">Change Theme</string>
+    <string name="info_recovered">Recovered: </string>
+    <string name="info_death">Death: </string>
+    <string name="info_active">Active: </string>
+    <string name="info_confirm">Confirm: </string>
+
+
+    <string-array name="pref_auto_lock_labels">
+
+        <item>Ujjawal</item>
+        <item>ujjawal</item>
+        <item>Ujjawal</item>
+    </string-array>
+
+    <string-array name="pref_auto_lock_values">
+
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+
+    <string-array name="pref_auto_lock_labels_theme">
+        <item>Day</item>
+        <item>Night</item>
+    </string-array>
+
+    <string-array name="pref_auto_lock_values_theme">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+</resources>
