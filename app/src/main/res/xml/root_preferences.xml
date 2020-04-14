@@ -1,0 +1,16 @@
+
+<androidx.preference.PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory >
+
+        <SwitchPreferenceCompat
+            android:key="@string/pref_key_check"
+           android:defaultValue="true"
+            android:title="@string/enable_push_notif" />
+
+
+    </PreferenceCategory>
+
+
+</androidx.preference.PreferenceScreen>

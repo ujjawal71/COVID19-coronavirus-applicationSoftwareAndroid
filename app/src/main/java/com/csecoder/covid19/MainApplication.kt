@@ -1,6 +1,9 @@
 package com.csecoder.covid19
 
 import android.app.Application
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO
+import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES
 import androidx.preference.PreferenceManager
 
 import com.csecoder.covid19.patient.*
@@ -42,6 +45,6 @@ class MainApplication : Application() {
        // Timber.e("CURRENT THEME ${preferences.getString(SyncStateContract.Constants.PREF_THEME, "2")}")
 
        // AppCompatDelegate.setDefaultNightMode(preferences.getString(SyncStateContract.Constants.PREF_THEME, "2")?.toInt()!!)
-       // AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO)
+       // AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES)
     }
 }

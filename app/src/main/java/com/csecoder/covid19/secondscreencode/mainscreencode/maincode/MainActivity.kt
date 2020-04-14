@@ -14,10 +14,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import android.view.animation.AccelerateDecelerateInterpolator
-import android.widget.FrameLayout
-import android.widget.LinearLayout
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.Observer
@@ -31,6 +28,7 @@ import com.csecoder.covid19.UjjuBoard.cseboard.gone
 import com.csecoder.covid19.UjjuBoard.cseboard.setSafeOnClickListener
 import com.csecoder.covid19.UjjuBoard.cseboard.toSimpleString
 import com.csecoder.covid19.UjjuBoard.cseboard.visible
+import com.csecoder.covid19.secondscreencode.mainscreencode.preferencescreen.PreferenceActivity
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.mapbox.mapboxsdk.Mapbox
 import com.mapbox.mapboxsdk.camera.CameraUpdateFactory
@@ -70,6 +68,21 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_main)
 
+
+        //Notifications
+        val button= findViewById<Button>(R.id.notbutton)
+        button?.setOnClickListener()
+        {
+           // intent =Intent(applicationContext,PreferenceActivity::class.java)
+            //startActivity(intent);
+            Toast.makeText(applicationContext,"Notifications",Toast.LENGTH_LONG).show();
+        }
+
+
+
+
+
+
         setupRvData()
 
         initMap(savedInstanceState)
@@ -79,6 +92,8 @@ class MainActivity : AppCompatActivity() {
         initView()
 
     }
+
+
 
     private fun initView() {
 

@@ -77,7 +77,7 @@ class PreferenceActivity : AppCompatActivity() {
         }
 
         override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
-
+            addPreferencesFromResource(R.xml.root_preferences)
 
             bindPreferenceSummaryToValue(findPreference(Constants.PREF_DATA_SOURCE)!!)
 
@@ -123,7 +123,7 @@ class PreferenceActivity : AppCompatActivity() {
                     preference,
                     PreferenceManager
                         .getDefaultSharedPreferences(preference.context)
-                        .getBoolean(preference.key, true)
+                        .getBoolean(preference.key, false)
                 )
             }
 
@@ -133,8 +133,9 @@ class PreferenceActivity : AppCompatActivity() {
             val stringValue = value.toString()
 
 
-            if (preference is ListPreference) {
-                if (preference.key == Constants.PREF_DATA_SOURCE) {
+            if (preference is ListPreference)
+            {
+               if (preference.key == Constants.PREF_DATA_SOURCE) {
                     val i = preference.findIndexOfValue(value.toString())
 
                     if (i >= 0) {
@@ -196,8 +197,8 @@ class PreferenceActivity : AppCompatActivity() {
 
 
             if (preference is SwitchPreferenceCompat) {
-                //preference.isChecked
-                if (true) {
+
+                if (preference.isChecked) {
                     startNotifyWorker()
                     preferences.edit().putBoolean(Constants.PREF_CHECK_NOTIFICATION, true).apply()
                 } else {
